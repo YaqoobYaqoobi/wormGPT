@@ -219,7 +219,7 @@ def call_api(user_input):
         
     except Exception as e:
         return f"[WormGPT] API Error: {str(e)}"
-
+    # this func is use for making a web session
 def chat_session():
     config = load_config()
     clear_screen()
@@ -295,7 +295,7 @@ def main_menu():
         except Exception as e:
             print(f"\n{colors.red}Error: {e}{colors.reset}")
             time.sleep(2)
-
+# this code is the main apennier of code 
 def main():
     try:
         import requests
